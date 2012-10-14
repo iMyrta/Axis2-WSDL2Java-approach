@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.1  Built on : Aug 31, 2011 (12:22:40 CEST) -->
+<serviceGroup>
+    <service name="HighScoreService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="com.itcuties.ws.HighScoreServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="com.itcuties.ws.HighScoreServiceMessageReceiverInOnly"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">com.itcuties.ws.MyHighScoreServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="addHighScore" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://serivces.itcuties.com">
+            <actionMapping>urn:addHighScore</actionMapping>
+        </operation>
+        <operation name="getHighScores" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://serivces.itcuties.com">
+            <actionMapping>urn:getHighScores</actionMapping>
+            <outputActionMapping>urn:getHighScoresResponse</outputActionMapping>
+        </operation>
+        <operation name="getHighScoresForNickname" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://serivces.itcuties.com">
+            <actionMapping>urn:getHighScoresForNickname</actionMapping>
+            <outputActionMapping>urn:getHighScoresForNicknameResponse</outputActionMapping>
+        </operation>
+        <operation name="getHighScoresSize" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://serivces.itcuties.com">
+            <actionMapping>urn:getHighScoresSize</actionMapping>
+            <outputActionMapping>urn:getHighScoresSizeResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>
